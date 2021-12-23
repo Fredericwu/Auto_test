@@ -1,0 +1,9 @@
+run_count: 1
+run_time: 800
+test_device_info: [/dev/sdh,/dev/sdj] 
+size: 80%
+
+unique_ID: 10001
+write_to_excel: False
+line_chart: false
+histogram: True

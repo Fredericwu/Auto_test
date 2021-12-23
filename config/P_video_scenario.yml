@@ -1,0 +1,9 @@
+#Video scenario read/write test
+
+run_count: 1
+run_time: 300
+test_device_info: [/dev/vda,/dev/vdb] 
+size: 1G
+write_to_excel: True
+line_chart: True
+histogram: True

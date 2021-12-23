@@ -1,0 +1,26 @@
+#self_defined_config yaml file
+PerformanceGlobal:
+  ioengine=libaio 
+  direct=1 
+  ramp_time=10
+  runtime=120
+  size=200M
+  group_reporting
+  new_group
+
+#if test directory,please input size=size_capacity on PerformanceGlobal
+PerformanceSetting: 
+  # filename: [/dev/sdd,/dev/sdb]
+  filename: [/dev/local_test,/dev/drbd_test_oneway,/dev/drbd_test_twoway,/dev/drbd_test_threeway]
+  # bs: [1k,2k,4k,8k,16k]
+  bs: [1k,2k,4k,8k,16k,32k,64k,128k,256k,512k,1M,2M]
+  rw: [read,write,randread,randwrite]
+  iodepth: ['8']
+  numjobs: ['8']
+
+write_to_excel: True
+line_chart: False
+histogram: False
+
+#bs: [1k,2k,4k,8k,16k,32k,64k,128k,256k,512k,1M,2M]
+#filename: [/dev/local_test,/dev/drbd_test_oneway,/dev/drbd_test_twoway,/dev/drbd_test_threeway]

@@ -1,0 +1,9 @@
+#sequential read/write test
+
+run_count: 1
+run_time: 600
+test_device_info: [/dev/sdb,/dev/sdc] 
+size: 10G
+write_to_excel: False
+line_chart: True
+histogram: True
